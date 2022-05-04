@@ -1,5 +1,4 @@
-import React from 'react'
-import Data from './Data'
+import EventCard from './EventCard'
 
 const ShowData = () => {
   return (
@@ -19,7 +18,7 @@ const ShowData = () => {
             </div>
         </div>
         <div>
-          <Data />
+          <EventCard />
         </div>
     </div>
   )
