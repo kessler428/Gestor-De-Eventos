@@ -90,9 +90,12 @@ const Login = () => {
                 },
               })}
             />
+             <p className="text-red-900 text-1s absolute">
+              {errors.password && errors.password.message}
+            </p>
           </div>
           <div className='w-3/5' >
-            <button className=' px-4 w-full py-4 bg-orange-600 text-white font-bold hover:bg-orange-700'>
+          <button className=' px-4 w-full rounded-md py-4 bg-bgButton text-white font-bold hover:bg-bgButtonHover'>
               Iniciar Sesión
             </button>
           </div>

@@ -1,7 +1,7 @@
 export const EventData = [
     {
         mes: "Mayo.",
-        dia: 23,
+        dia: 8,
         img: '../../../assets/evento-tech.jpeg',
         title: 'Evento tecnologico',
         lugar: 'Hotel Holiday INN',
@@ -9,7 +9,7 @@ export const EventData = [
     },
     {
         mes: "Mayo.",
-        dia: 7,
+        dia: 15,
         img: '../../../assets/MotoGP.png',
         title: 'Carrera de moto GP',
         lugar: 'España, Circuito Jerez',
@@ -17,7 +17,7 @@ export const EventData = [
     },
     {
         mes: "Mayo.",
-        dia: 4,
+        dia: 30,
         img: "../../assets/Champions.png",
         title: 'Partido de champions',
         lugar: 'Santiago Bernabeu',

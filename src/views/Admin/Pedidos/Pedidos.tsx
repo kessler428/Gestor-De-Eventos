@@ -49,7 +49,7 @@ const Pedidos = () => {
             
             <div className="flex flex-col mt-10 justify-center ml-20">
                 <div className='flex justify-center'>
-                    <img src={pedidos} alt="" className='h-32 w-32'/>
+                    <img src={pedidos} alt="" className='h-32 bg-gray-100 rounded-full p-4 w-32'/>
                 </div>
                 <div className='flex justify-center'>
                     <p className='text-gray-600 font-bold'>No hay pedidos que mostrar</p>

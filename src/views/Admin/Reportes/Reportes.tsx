@@ -17,6 +17,11 @@ const Reportes = () => {
         navigate('/Mi_evento/Reporte/Resumen_de_ventas');
     }
 
+    const VerReporte2 = () =>{
+        navigate('/Mi_evento/Reporte/Ventas_tipo_entrada');
+    }
+
+
   return (
     <div>
         <HeaderAdmin />
@@ -40,7 +45,7 @@ const Reportes = () => {
                                 <AiOutlineTags className='bg-bgBlueIconbtn w-28 h-12 rounded-lg p-2 ml-2' />
                             </div>
                         </button>
-                        <button className='w-2/6 rounded-xl bg-bgBluebtn text-white p-4'>
+                        <button onClick={VerReporte2} className='w-2/6 rounded-xl bg-bgBluebtn text-white p-4'>
                             <h1 className='text-left font-bold text-lg'>Ventas por tipo de entrada</h1>
                             <div className='flex flex-row'>
                                 <p className='text-left text-sm'>Segmentar la información de los asistentes por tipo de entrada</p>

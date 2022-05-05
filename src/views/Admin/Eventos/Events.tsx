@@ -59,17 +59,17 @@ const Events = () => {
                     </Link>
                 </div>
             </div>
-            <div className="flex flex-row mt-10">
-                <div className='flex flex-row w-full py-2'>
-                    <div className="-mr-32 w-3/6 flex flex-row">
-                        <BsSearch className="relative top-6 left-8" />
+            <div className="flex flex-row w-3/4 mt-10">
+                <div className='flex flex-row justify-between w-full py-2'>
+                    <div className="w-7/12 ml-4 border flex flex-row">
+                        <BsSearch className="mt-5 ml-5" />
                         <input
-                        className="w-4/5 bg-white border h-13 px-12"
+                        className="w-full bg-white h-13 px-4"
                         placeholder="Buscar evento"
                         type="text"
                         />
                     </div>
-                    <div className="w-1/4 border ml-8">
+                    <div className="w-1/3 mr-12 border">
                         <div className='flex flex-col py-2 px-3 bg-white'>
                             <label htmlFor="" className=' text-sm '>Estado del evento</label>
                             <select name="" id="" className='text-base font-bold '>

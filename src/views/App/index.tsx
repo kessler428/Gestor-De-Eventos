@@ -13,6 +13,7 @@ import Settings from "../Admin/Settings/Settings";
 import PerfilEdit from "../Admin/Settings/PerfilEdit";
 import PerfilAdd from "../Admin/Settings/PerfilAdd";
 import VerReporte1 from "../Admin/Reportes/VerReporte1";
+import VerReporte2 from "../Admin/Reportes/VerReporte2";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/pedidos" element={<Pedidos />} />
         <Route path="/reportes" element={<Reportes />} />
         <Route path="/Mi_evento/Reporte/Resumen_de_ventas" element={<VerReporte1 />} />
+        <Route path="/Mi_evento/Reporte/Ventas_tipo_entrada" element={<VerReporte2 />} />
         <Route path="/finanzas" element={<Finanzas />} />
         <Route path="/Crear_Evento" element={<CrearEvento />} />
         <Route path="/Configuraciones" element={<Settings />} />

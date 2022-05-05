@@ -1,13 +1,12 @@
 import React, { useState } from 'react'
 import ModalEvento from "./ModalEvento"
 import More from "../../assets/More.svg";
+import EventoTech from "../../assets/evento-tech.jpeg"
 import { EventData } from './EventData';
 
 import {AiOutlineEyeInvisible} from 'react-icons/ai'
 
 const EventCard = () => {
-
-    
     
     const [openModal, setOpenModal] = useState(false);
 
@@ -22,7 +21,7 @@ const EventCard = () => {
                                 <p className='text-center text-gray-500 font-bold text-xl'>{item.dia}</p>
                             </div>
                             <div className='h-20 w-20 ml-5 mt-5'>
-                                <img src={item.img} alt="" />
+                                <img src={EventoTech} alt="" />
                             </div>
                             <div className='flex flex-col ml-5 hover:underline'>
                                 <div className=''>
