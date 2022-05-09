@@ -38,28 +38,28 @@ const Login = () => {
           <div className='mb-6 w-3/5 border pt-1 bg-white mt-10'>
             <label className='block text-gray-500 text-sm ml-3'>Direccion de correo electronico</label>
             <input 
-              className=' rounded w-full text-gray-700 px-4 pb-2'
+              className=' rounded w-full text-gray-700 px-4 outline-none pb-2'
               type="email" 
               autoComplete="off"
               {...register("email", {
                 required: {
                   value: true,
-                  message: "add your username",
+                  message: "Escribe tu correo",
                 },
 
                 maxLength: {
                   value: 40,
-                  message: "Characters Maximum 40",
+                  message: "Maximo de caracteres 40",
                 },
 
                 minLength: {
                   value: 2,
-                  message: "Characters Minimum 2",
+                  message: "Minimo de caracteres 2",
                 },
 
                 pattern: {
                   value: /^\S+@\S+$/i,
-                  message: "Enter a valid email",
+                  message: "Escribe un correo valido",
                 },
               })}
             />
@@ -70,23 +70,23 @@ const Login = () => {
           <div className='mb-6 w-3/5 border pt-1 bg-white'>
             <label className='block text-gray-500 text-sm ml-3'>Contraseña</label>
             <input 
-              className=' rounded w-full text-gray-700 px-4 pb-2'
+              className=' rounded w-full text-gray-700 px-4 pb-2 outline-none'
               autoComplete="off"
               type="password" 
               {...register("password", {
                 required: {
                   value: true,
-                  message: "add your password",
+                  message: "Escribe tu contraseña",
                 },
 
                 maxLength: {
                   value: 25,
-                  message: "Characters Maximum 25",
+                  message: "Maximo de caracteres 25",
                 },
 
                 minLength: {
                   value: 2,
-                  message: "Characters Minimum 2",
+                  message: "Minimo de caracteres 2",
                 },
               })}
             />

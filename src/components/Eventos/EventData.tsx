@@ -1,4 +1,6 @@
-export const EventData = [
+import { PropsEventData } from "../../interfaces/InterfacesEvents";
+
+export const EventData: PropsEventData[] = [
     {
         mes: "Mayo.",
         dia: 8,

@@ -8,7 +8,7 @@ import { informacionDelPedido, informacionDelAsistente, informacionDelComprador,
 import { MdKeyboardArrowLeft } from 'react-icons/md'
 import { IoIosArrowForward } from 'react-icons/io'
 
-const VerReporte2 = () => {
+export const VerReporte2 = () => {
     const [columns, setColumns] = useState(false);
     const [entradas, setEntradas] = useState(false);
 
@@ -251,5 +251,3 @@ const VerReporte2 = () => {
         </div>
     )
 }
-
-export default VerReporte2

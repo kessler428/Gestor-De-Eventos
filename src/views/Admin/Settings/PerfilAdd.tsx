@@ -10,7 +10,7 @@ import { IoPhonePortraitOutline } from 'react-icons/io5'
 import {HiOutlinePhotograph} from 'react-icons/hi'
 import { MdKeyboardArrowLeft } from 'react-icons/md'
 
-const PerfilAdd = () => {
+export const PerfilAdd = () => {
 
     const [toggle , setToggle ] = useState(true)
 
@@ -153,5 +153,3 @@ const PerfilAdd = () => {
     </div>
   )
 }
-
-export default PerfilAdd;

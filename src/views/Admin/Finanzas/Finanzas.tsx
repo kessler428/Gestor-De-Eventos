@@ -5,7 +5,7 @@ import Fanstama from '../../../assets/Fantasma.png'
 
 import { BsSearch } from "react-icons/bs";
 
-const Finanzas = () => {
+export const Finanzas = () => {
 
     const [resumen, setResumen] = useState(true)
 
@@ -128,5 +128,3 @@ const Finanzas = () => {
     </div>
   )
 }
-
-export default Finanzas;

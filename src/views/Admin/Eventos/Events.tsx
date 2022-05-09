@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import HeaderAdmin from '../../../components/Header/HeaderAdmin'
 import { BsSearch } from "react-icons/bs";
 
@@ -7,7 +7,7 @@ import SideBar from '../../../components/SideBar';
 import { Link } from 'react-router-dom';
 import ShowData from '../../../components/Eventos/ShowData';
 
-const Events = () => {
+export const Events = () => {
 
     const [showEvent, setShowEvent] = useState(true)
 
@@ -112,5 +112,3 @@ const Events = () => {
     </div>
   )
 }
-
-export default Events

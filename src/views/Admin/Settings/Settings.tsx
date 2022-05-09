@@ -8,7 +8,7 @@ import { AiOutlineFileImage } from 'react-icons/ai'
 import { RiAccountCircleLine } from 'react-icons/ri'
 import { Link, useNavigate } from 'react-router-dom';
 
-const Settings = () => {
+export const Settings = () => {
     let navigate = useNavigate();
 
     const [openModal, setOpenModal] = useState(false);
@@ -118,5 +118,3 @@ const Settings = () => {
     </div>
   )
 }
-
-export default Settings;

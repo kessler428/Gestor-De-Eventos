@@ -6,7 +6,7 @@ import { FiHelpCircle } from 'react-icons/fi'
 import pedidos from '../../../assets/pedidos.png'
 import SideBar from '../../../components/SideBar';
 
-const Pedidos = () => {
+export const Pedidos = () => {
   return (
     <div>
         <HeaderAdmin />
@@ -66,5 +66,3 @@ const Pedidos = () => {
     </div>
   )
 }
-
-export default Pedidos;

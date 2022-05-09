@@ -1,4 +1,15 @@
-export const informacionDelPedido = [
+interface information {
+    input1: String;
+    input2: String;
+    input3: String;
+    input4: String;
+}
+
+interface data {
+    nombre: String;
+}
+
+export const informacionDelPedido:information[] = [
     {
         input1: 'Afiliado',
         input2: 'Descuento',
@@ -26,11 +37,12 @@ export const informacionDelPedido = [
     {
         input1: 'Procesamiento de pagos de polpo pass',
         input2: 'Nivel de precios',
-        input3: 'Retenido'
+        input3: 'Retenido',
+        input4: 'Direccion de facturacion'
     }
 ]
 
-export const informacionDelAsistente = [
+export const informacionDelAsistente:information[] = [
     {
         input1: 'Número de asistente',
         input2: 'Número de código de barras',
@@ -70,11 +82,12 @@ export const informacionDelAsistente = [
     {
         input1: 'Genero',
         input2: 'Domicilio Particular',
-        input3: 'Edad'
+        input3: 'Edad',
+        input4: 'Telefono de casa'
     },
 ]
 
-export const informacionDelComprador = [
+export const informacionDelComprador:data[] = [
     {
         nombre: 'Direccion del correo electronico del comprador'
     },
@@ -98,7 +111,7 @@ export const informacionDelComprador = [
     }
 ]
 
-export const informacionDelEvento = [
+export const informacionDelEvento:data[] = [
     {
         nombre: 'ID de evento'
     },
@@ -113,7 +126,7 @@ export const informacionDelEvento = [
     },
 ]
 
-export const gestionDeAcceso = [
+export const gestionDeAcceso:data[] = [
     {
         nombre: 'Periodo de acreditacion'
     },

@@ -3,17 +3,12 @@ import HomePage from "../HomePage";
 import NotFoundPage from "../NotFoundPage";
 import Login from "../Users/Login";
 import Register from "../Users/Register";
-import Events from "../Admin/Eventos/Events";
-import Pedidos from "../Admin/Pedidos/Pedidos";
-import Reportes from "../Admin/Reportes/Reportes";
-import Finanzas from "../Admin/Finanzas/Finanzas";
-import CrearEvento from "../Admin/Eventos/CrearEvento";
-import HomeAdmin from "../Admin/homeAdmin";
-import Settings from "../Admin/Settings/Settings";
-import PerfilEdit from "../Admin/Settings/PerfilEdit";
-import PerfilAdd from "../Admin/Settings/PerfilAdd";
-import VerReporte1 from "../Admin/Reportes/VerReporte1";
-import VerReporte2 from "../Admin/Reportes/VerReporte2";
+import { HomeAdmin } from "../Admin/homeAdmin";
+import { Events, CrearEvento } from "../Admin/Eventos";
+import { Pedidos } from "../Admin/Pedidos/Pedidos";
+import { Reportes, VerReporte1, VerReporte2 } from "../Admin/Reportes";
+import { Finanzas } from "../Admin/Finanzas/Finanzas";
+import { Settings, PerfilEdit, PerfilAdd } from "../Admin/Settings";
 
 function App() {
   return (

@@ -1,9 +1,5 @@
-import React from "react";
 import { GrFormDown } from "react-icons/gr";
-
-interface title {
-  title: string
-}
+import { title } from "../../interfaces/InterfacesHeader";
  
 function HeaderMenu({
     title,

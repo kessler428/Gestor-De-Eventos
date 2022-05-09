@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
+import { ModalValue } from '../../interfaces/InterfacesSettings';
 
-interface ModalValue {
-    openModal: boolean;
-}
 
 const Modal = ({ openModal }: ModalValue) => {
 

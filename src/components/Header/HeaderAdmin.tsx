@@ -1,18 +1,16 @@
-import React,{ useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 
 import { RiArrowDownSLine, RiAccountCircleLine } from 'react-icons/ri'
 import { HiOutlineSwitchHorizontal } from 'react-icons/hi'
 import { BiLogOut } from 'react-icons/bi'
+import { icons } from "../../interfaces/InterfacesHeader";
 
-interface icons {
-  icon: any,
-}
 
 function HeaderAdmin() {
 
-  const [email, setEmail] = useState(false)
+  const [email, setEmail] = useState(false);
 
   const handleClick = () =>{
     setEmail(!email);

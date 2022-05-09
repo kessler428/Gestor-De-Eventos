@@ -29,7 +29,7 @@ const Header2 = () => {
         />
       </div>
       <div className="w-8/12 justify-end lg:w-6/12 flex items-center h-full">
-        <div className="flex flex-col mr-6 hover:bg-gray-200 p-4">
+        <div className="flex flex-col mr-6  hover:bg-gray-200 py-4 px-3">
             <Link to="/Crear_Evento"
                 className="text-blue-600"
             >

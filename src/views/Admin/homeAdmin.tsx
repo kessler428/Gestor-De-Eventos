@@ -3,7 +3,7 @@ import event from "../../assets/event.jpg";
 import Footer from "../../components/Footer";
 import Header2 from "../../components/Header/Header";
 
-function HomeAdmin() {
+export const HomeAdmin = () => {
   return (
     <>
       <Header2 />
@@ -44,5 +44,3 @@ function HomeAdmin() {
     </>
   );
 }
-
-export default HomeAdmin;

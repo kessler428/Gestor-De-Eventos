@@ -1,7 +1,5 @@
-interface itemModal {
-	ItemModal: boolean,
-	setItemModal: any
-}
+import { itemModal } from "../../interfaces/InterfacesModal";
+
 
 export const GirdModalItems = ({ ItemModal, setItemModal }: itemModal) => {
 	return (

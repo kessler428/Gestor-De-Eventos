@@ -9,7 +9,7 @@ import { IoIosArrowDown } from 'react-icons/io'
 import { BiExport, BiPencil, BiArrowToLeft, BiArrowToRight, BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi"
 import { BsSearch} from "react-icons/bs"
 
-const VerReporte1 = () => {
+export const VerReporte1 = () => {
     const [filter, setfilter] = useState(true);
 
     const handleCancel = () =>{
@@ -116,5 +116,3 @@ const VerReporte1 = () => {
         </div>
     )
 }
-
-export default VerReporte1

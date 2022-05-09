@@ -10,7 +10,7 @@ import { HiClipboardList, HiOutlineSwitchHorizontal } from 'react-icons/hi'
 import { GiTicket } from 'react-icons/gi'
 import { MdOutlineAccountCircle } from 'react-icons/md'
 
-const Reportes = () => {
+export const Reportes = () => {
     let navigate = useNavigate();
 
     const VerReporte1 = () =>{
@@ -163,5 +163,3 @@ const Reportes = () => {
     </div>
   )
 }
-
-export default Reportes;
