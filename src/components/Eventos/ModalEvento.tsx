@@ -19,14 +19,14 @@ const ModalEvento = ({ openModal }: ModalProps) => {
                             </Link>
 
                             <Link
-                            to="/events"
+                            to="/ver_evento"
                             className="flex my-3 hover:bg-gray-100 p-3 w-full"
                             >
                             <p className="text-lg">Ver</p>
                             </Link>
 
                             <Link
-                            to="/"
+                            to="/editar_evento"
                             className="flex my-3 hover:bg-gray-100 p-3 w-full"
                             >
                             <p className="text-lg">Editar</p>

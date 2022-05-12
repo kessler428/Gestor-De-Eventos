@@ -61,8 +61,8 @@ const Header2 = () => {
         </div>
 
         <div onClick={handleClick} className="flex cursor-pointer hover:bg-gray-200 p-5 items-center justify-center">
-              <div className="bg-gray-300 rounded-full py-3 px-3 mr-2 text-white text-xs">Dc</div>
-              <button>dcalvom@gmail.com</button>
+              <div className="bg-gray-300 rounded-full py-3 px-3 mr-2 text-white text-xs">Ke</div>
+              <button>ktorres@gmail.com</button>
               <RiArrowDownSLine className="relative left-2"/>
             </div>
             {
