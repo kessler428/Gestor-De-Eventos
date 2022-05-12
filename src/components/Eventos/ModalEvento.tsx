@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { ModalProps } from '../../interfaces/InterfacesEvents';
-
 import { AiOutlineEye, AiOutlineEdit, AiOutlineCopy } from "react-icons/ai"
 import { RiDeleteBinLine } from "react-icons/ri"
 
@@ -23,7 +22,7 @@ const ModalEvento = ({ openModal }: ModalProps) => {
                             </Link>
 
                             <Link
-                            to="/editar_evento"
+                            to="/editar_evento/informacion_basica"
                             className="flex hover:bg-gray-100 w-48"
                             >
                                 <AiOutlineEdit className='w-5 h-5 mt-5 ml-3' />

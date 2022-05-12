@@ -4,7 +4,7 @@ import NotFoundPage from "../NotFoundPage";
 import Login from "../Users/Login";
 import Register from "../Users/Register";
 import { HomeAdmin } from "../Admin/homeAdmin";
-import { Events, CrearEvento, VerEvento, EditarEvento } from "../Admin/Eventos";
+import { Events, CrearEvento, VerEvento, BasicInformation, Details, Order, Publish } from "../Admin/Eventos";
 import { Pedidos } from "../Admin/Pedidos/Pedidos";
 import { Reportes, VerReporte1, VerReporte2 } from "../Admin/Reportes";
 import { Finanzas } from "../Admin/Finanzas/Finanzas";
@@ -47,8 +47,20 @@ function App() {
           element={ <VerEvento />  } 
         />
         <Route 
-          path="/editar_evento" 
-          element={ <EditarEvento /> }
+          path="/editar_evento/informacion_basica" 
+          element={ <BasicInformation /> }
+        />
+        <Route 
+          path="/editar_evento/detalles" 
+          element={ <Details /> }
+        />
+        <Route 
+          path="/editar_evento/pedidos" 
+          element={ <Order /> }
+        />
+        <Route 
+          path="/editar_evento/publicaciones" 
+          element={ <Publish /> }
         />
         <Route 
           path="/pedidos" 
