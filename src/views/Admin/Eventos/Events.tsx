@@ -6,12 +6,13 @@ import calendario from '../../../assets/calendar.jpg'
 import SideBar from '../../../components/SideBar';
 import { Link } from 'react-router-dom';
 import ShowData from '../../../components/Eventos/ShowData';
+import { Calendar } from '../../../components/Eventos/Calendar';
 
 export const Events = () => {
 
     const [showEvent, setShowEvent] = useState(true)
 
-    let events = true;
+    let events = 5;
 
     const handleEvent = () => {
         setShowEvent(true)
@@ -27,7 +28,7 @@ export const Events = () => {
         <SideBar />
         <hr />
 
-        <div className=' container w-11/12 mt-28 pl-60'>
+        <div className='container w-11/12 mt-28 pl-60'>
             <h1 className=' text-6xl text-titleTextColor font-bold'>Eventos</h1>
             <div className="flex flex-row mt-10 ml-3 justify-end w-4/5">
                 <div className="">
@@ -85,7 +86,7 @@ export const Events = () => {
 
             {
                 showEvent === true ? (
-                    events !== true ? (
+                    events === 1 ? (
                         <div className="flex flex-col mt-10 justify-center ml-20">
                             <div className='flex justify-center'>
                                 <img src={calendario} alt="" className='h-32 w-32'/>
@@ -102,8 +103,8 @@ export const Events = () => {
 
                 ):
                 (   
-                    <div>
-                        Hola
+                    <div className='container w-11/12 pl-4 mt-8'>
+                        <Calendar />
                     </div>
                 )
             }

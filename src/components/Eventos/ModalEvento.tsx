@@ -1,61 +1,61 @@
 import { Link } from 'react-router-dom';
 import { ModalProps } from '../../interfaces/InterfacesEvents';
 
+import { AiOutlineEye, AiOutlineEdit, AiOutlineCopy } from "react-icons/ai"
+import { RiDeleteBinLine } from "react-icons/ri"
+
 
 const ModalEvento = ({ openModal }: ModalProps) => {
 
     return (
-        <div className='flex justify-end  -mt-96'>
+        <div className='flex justify-end m-20 -mt-96'>
             {openModal && (
-                <div className="container absolute bg-white -mt-36 -m-8 shadow-lg border-2 w-auto overflow-x-hidden">
-                    <div className='flex-col mx-3 my-2'>
-                        
-                        <div className="flex-col px-3 my-2">
-                            <Link
-                            to="/"
-                            className="flex my-3 hover:bg-gray-100 p-3 w-full"
-                            >
-                            <p className="text-lg">Promoción de tu evento</p>
-                            </Link>
+                <div className="container absolute bg-white -mt-28 shadow-lg border-2 w-auto overflow-x-hidden">
+                    <div className='flex-col'>
+                        <div className="flex-col">
 
                             <Link
                             to="/ver_evento"
-                            className="flex my-3 hover:bg-gray-100 p-3 w-full"
+                            className="flex hover:bg-gray-100 w-48"
                             >
-                            <p className="text-lg">Ver</p>
+                                <AiOutlineEye className='w-5 h-5 mt-5 ml-3' />
+                                <p className="py-4 text-lg ml-4">Ver</p>
                             </Link>
 
                             <Link
                             to="/editar_evento"
-                            className="flex my-3 hover:bg-gray-100 p-3 w-full"
+                            className="flex hover:bg-gray-100 w-48"
                             >
-                            <p className="text-lg">Editar</p>
+                                <AiOutlineEdit className='w-5 h-5 mt-5 ml-3' />
+                                <p className="py-4 text-lg ml-4">Editar</p>
                             </Link>
 
                             <Link
                             to="/"
-                            className="flex my-3 hover:bg-gray-100 p-3 w-full"
+                            className="flex hover:bg-gray-100 w-48"
                             >
-                            <p className="text-lg">Copiar URL</p>
+                                <AiOutlineCopy className='w-5 h-5 mt-5 ml-3' />
+                                <p className="py-4 text-lg ml-4">Copiar URL</p>
                             </Link>
 
                             <hr />
 
                             <Link
                             to="/"
-                            className="flex my-3 hover:bg-gray-100 p-3 w-full"
+                            className="flex hover:bg-gray-100 w-48"
                             >
-                            <p className="text-lg">Copia evento</p>
+                                <AiOutlineCopy className='w-5 h-5 mt-5 ml-3' />
+                                <p className=" py-4 text-lg ml-4">Copia evento</p>
                             </Link>
 
                             <Link
                             to="/"
-                            className="flex my-3 hover:bg-gray-100 rounded-md p-3 w-full"
+                            className="flex hover:bg-gray-100 w-48"
                             >
-                            <p className="ml-2 text-lg">Eliminar</p>
+                                <RiDeleteBinLine className='text-red-500 w-5 h-5 mt-5 ml-3' />
+                                <p className=" py-4 text-lg ml-4">Eliminar</p>
                             </Link>
                         </div>
-                        
                     </div>
                 </div>
             )}

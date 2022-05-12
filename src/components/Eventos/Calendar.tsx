@@ -1,50 +1,26 @@
-import moment from "moment";
-import "react-big-calendar/lib/css/react-big-calendar.css";
-import { Calendar, momentLocalizer  } from 'react-big-calendar';
+import FullCalendar, { EventInput } from "@fullcalendar/react";
+import dayGridPlugin from '@fullcalendar/daygrid';
 
-require('moment/locale/es.js')
-
-const localizer = momentLocalizer(moment);
-
-const events = [
+const data:EventInput[] = [
     {
-        title: "Pre-encuentro vencedores",
-        allDay: true,
-        start: new Date(2022,4,25),
-        end: new Date(2022,4,25)
+        title: "Evento tecnologico",
+        start: '2022-05-12'
     },
     {
-        title: "Hackaton",
-        start: new Date(2022,4,28),
-        end: new Date(2022,4,29)
+        title: "Carrera de Moto GP (Francia)",
+        start: '2022-05-15'
     },
     {
-        title: "Conferencia",
-        start: new Date(2022,3,30),
-        end: new Date(2022,3,30)
+        title: "Final de la champions",
+        start: '2022-05-28'
     }
 ]
 
-const Calendario = () => {
-  return (
-    <div className='border-t mt-10 w-10/12 mb-36'>
-        <Calendar 
-            localizer={localizer}
-            events={events}
-            startAccessor="start"
-            endAccessor="end"
-            style={{height: 400, width: 820, marginTop: "40px", marginLeft: "15px"}}
-            messages={{
-                next: "Siguiente",
-                previous: "Anterior",
-                today: "Hoy",
-                month: "Mes",
-                week: "Semana",
-                day: "Día",
-              }}
+export const Calendar = () =>{
+    return(
+        <FullCalendar 
+            events={data}
+            plugins={[dayGridPlugin]}
         />
-    </div>
-  )
+    )
 }
-
-export default Calendario;

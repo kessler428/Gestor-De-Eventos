@@ -47,7 +47,7 @@ export const VerEvento = () => {
                         </div>
                         <div className="w-1/2">
                             <button className=" w-full py-2 border-2 border-black">
-                                Details
+                                Detalles
                             </button>
                         </div>
                     </div>
