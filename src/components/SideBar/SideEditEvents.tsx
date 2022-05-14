@@ -45,7 +45,7 @@ export const SideEditEvents = () => {
                     <NavLink 
                         className={ ({ isActive }) => isActive ? 'p-4 bg-white flex flex-row w-full hover:bg-gray-200' : ' p-4 flex flex-row w-full hover:bg-gray-200'}  to='/editar_evento/pedidos'>
                         <AiFillCheckCircle className='w-6 h-6 mr-4' />
-                        Pedidos
+                        Entradas
                     </NavLink>
                 </div>
                 <div className='flex flex-row cursor-pointer text-titleTextColor'>
