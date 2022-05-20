@@ -17,7 +17,7 @@ export const Details = () => {
             <SideBar />
             <SideEditEvents />
         </div>
-        <div className='container mx-auto w-7/12 mt-28 mb-96'>
+        <div className='container mx-auto w-7/12 mt-28 mb-20'>
             <div className='ml-40'>
                 <form>
                     <div className="flex flex-row">

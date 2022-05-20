@@ -29,37 +29,45 @@ export const SideEditEvents = () => {
             <div className='border-b-2'>
                 <div className='flex flex-row cursor-pointer text-titleTextColor '>
                     <NavLink 
-                        className={ ({ isActive }) => isActive ? 'p-4 bg-white flex flex-row w-full hover:bg-gray-200' : ' p-4 flex flex-row w-full hover:bg-gray-200'}  to='/editar_evento/informacion_basica'>
+                        className={ ({ isActive }) => isActive ? 'p-4 bg-white flex flex-row w-full hover:bg-gray-200' : ' p-4 flex flex-row w-full hover:bg-gray-200'}  
+                        to='/editar_evento/informacion_basica'
+                    >
                         <AiFillCheckCircle className='w-6 h-6 mr-4' />
                         Informacion Basica
                     </NavLink>
                 </div>
                 <div className='flex flex-row cursor-pointer text-titleTextColor'>
                     <NavLink 
-                        className={ ({ isActive }) => isActive ? 'p-4 bg-white flex flex-row w-full hover:bg-gray-200' : ' p-4 flex flex-row w-full hover:bg-gray-200'}  to='/editar_evento/detalles'>
+                        className={ ({ isActive }) => isActive ? 'p-4 bg-white flex flex-row w-full hover:bg-gray-200' : ' p-4 flex flex-row w-full hover:bg-gray-200'}  
+                        to='/editar_evento/detalles'
+                    >
                         <AiFillCheckCircle className='w-6 h-6 mr-4' />
                         Detalles
                     </NavLink>
                 </div>
                 <div className='flex flex-row cursor-pointer text-titleTextColor'>
                     <NavLink 
-                        className={ ({ isActive }) => isActive ? 'p-4 bg-white flex flex-row w-full hover:bg-gray-200' : ' p-4 flex flex-row w-full hover:bg-gray-200'}  to='/editar_evento/pedidos'>
+                        className={ ({ isActive }) => isActive ? 'p-4 bg-white flex flex-row w-full hover:bg-gray-200' : ' p-4 flex flex-row w-full hover:bg-gray-200'}  
+                        to='/editar_evento/pedidos'
+                    >
                         <AiFillCheckCircle className='w-6 h-6 mr-4' />
                         Entradas
                     </NavLink>
                 </div>
                 <div className='flex flex-row cursor-pointer text-titleTextColor'>
                     <NavLink 
-                        className={ ({ isActive }) => isActive ? 'p-4 bg-white flex flex-row w-full hover:bg-gray-200' : ' p-4 flex flex-row w-full hover:bg-gray-200'}  to='/editar_evento/publicaciones'>
+                        className={ ({ isActive }) => isActive ? 'p-4 bg-white flex flex-row w-full hover:bg-gray-200' : ' p-4 flex flex-row w-full hover:bg-gray-200'}  
+                        to='/editar_evento/publicaciones'
+                    >
                         <AiFillCheckCircle className='w-6 h-6 mr-4' />
-                        Publicaciones
+                        Publicar
                     </NavLink>
                 </div>
             </div>
             <div className='mb-20'>
                 <div className='p-4 hover:bg-gray-200'>
-                    <NavLink to=''>
-                        Tablero
+                    <NavLink to='/editar_evento/panel_de_control'>
+                        Panel de control
                     </NavLink>
                 </div>
                 <div 

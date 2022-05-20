@@ -9,6 +9,7 @@ import { Pedidos } from "../Admin/Pedidos/Pedidos";
 import { Reportes, VerReporte1, VerReporte2 } from "../Admin/Reportes";
 import { Finanzas } from "../Admin/Finanzas/Finanzas";
 import { Settings, PerfilEdit, PerfilAdd } from "../Admin/Settings";
+import Dashboard from "../Admin/Eventos/EditEvents/Dashboard";
 
 function App() {
   return (
@@ -61,6 +62,10 @@ function App() {
         <Route 
           path="/editar_evento/publicaciones" 
           element={ <Publish /> }
+        />
+        <Route 
+          path="/editar_evento/panel_de_control" 
+          element={ <Dashboard /> }
         />
         <Route 
           path="/pedidos" 

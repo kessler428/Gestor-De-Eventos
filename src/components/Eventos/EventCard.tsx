@@ -13,24 +13,24 @@ const EventCard = () => {
     return (
         <>  
             { 
-                EventData.map((item, index) => (            
-                    <div key={index} className="py-5 w-4/5 flex flex-row pl-8 ml-4 border-b hover:shadow-lg">
+                EventData.map( ({id, mes, dia, img, title, lugar, fecha}) => (            
+                    <div key={id} className="py-5 w-4/5 flex flex-row pl-8 ml-4 border-b hover:shadow-lg">
                         <div className='w-2/3'>
                             <div className='flex flex-row'>
                                 <div className="mt-5">
-                                    <p className='text-red-600'>{item.mes}</p>
-                                    <p className='text-center text-gray-500 font-bold text-xl'>{item.dia}</p>
+                                    <p className='text-red-600'>{mes}</p>
+                                    <p className='text-center text-gray-500 font-bold text-xl'>{dia}</p>
                                 </div>
-                                <div className='h-20 w-20 ml-5 mt-5'>
-                                    <img src={EventoTech} alt="" />
+                                <div className='h-20 w-36 ml-5 mt-5'>
+                                    <img src={img} alt="" />
                                 </div>
                                 <div className='flex flex-col ml-5 hover:underline'>
                                     <div className=''>
-                                        <h1>{item.title}</h1>
+                                        <h1>{title}</h1>
                                     </div>
                                     <div className=' text-xs text-gray-500'>
-                                        <p>{item.lugar}</p>
-                                        <p>{item.fecha}</p>
+                                        <p>{lugar}</p>
+                                        <p>{fecha}</p>
                                     </div>
                                     <div>
                                         <AiOutlineEyeInvisible />

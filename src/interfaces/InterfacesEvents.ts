@@ -3,6 +3,7 @@ export interface ModalProps {
 }
 
 export interface PropsEventData {
+    id: number;
     mes: string;
     dia: number;
     img: string;

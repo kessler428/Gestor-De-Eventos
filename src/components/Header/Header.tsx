@@ -71,14 +71,14 @@ const Header2 = () => {
                   <div className="flex-col">
                     <Link
                       to="/"
-                      className="flex hover:bg-gray-100 px-12 py-6"
+                      className="flex hover:bg-gray-100 px-8 py-3"
                     >
                       <p className="text-lg">Descubrir eventos</p>
                     </Link>
 
                     <Link
                       to="/events"
-                      className="flex hover:bg-gray-100 px-12 py-6"
+                      className="flex hover:bg-gray-100 px-8 py-3"
                     >
                       <p className="text-lg">Gestionar mis eventos</p>
                     </Link>
@@ -87,33 +87,33 @@ const Header2 = () => {
 
                     <Link
                       to="/"
-                      className="flex hover:bg-gray-100 px-12 py-6"
+                      className="flex hover:bg-gray-100 px-8 py-3"
                     >
                       <p className="text-lg">Entradas</p>
                     </Link>
 
                     <Link
                       to="/"
-                      className="flex hover:bg-gray-100 px-12 py-6"
+                      className="flex hover:bg-gray-100 px-8 py-3"
                     >
                       <p className="text-lg">Créditos</p>
                     </Link>
                     <Link
                       to="/"
-                      className="flex hover:bg-gray-100 px-12 py-6"
+                      className="flex hover:bg-gray-100 px-8 py-3"
                     >
                       <p className="text-lg">Me han gustado</p>
                     </Link>
 
                     <Link
                       to="/"
-                      className="flex hover:bg-gray-100 px-12 py-6"
+                      className="flex hover:bg-gray-100 px-8 py-3"
                     >
                       <p className="text-lg">Siguiendo</p>
                     </Link>
                     <Link
                       to="/"
-                      className="flex hover:bg-gray-100 px-12 py-6"
+                      className="flex hover:bg-gray-100 px-8 py-3"
                     >
                       <p className="text-lg">Intereses</p>
                     </Link>
@@ -122,14 +122,14 @@ const Header2 = () => {
 
                     <Link
                       to="/"
-                      className="flex hover:bg-gray-100 px-12 py-6"
+                      className="flex hover:bg-gray-100 px-8 py-3"
                     >
                       <p className="ml-2 text-lg">Ajustes de la cuenta</p>
                     </Link>
 
                     <Link
                       to="/"
-                      className="flex hover:bg-gray-100 px-12 py-6"
+                      className="flex hover:bg-gray-100 px-8 py-3"
                     >
                       <p className="ml-2 text-lg">Cerrar sesion</p>
                     </Link>
