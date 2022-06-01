@@ -85,17 +85,17 @@ export const SideEditEvents = () => {
                     opt && (
                         <div className='pl-4'>
                             <div className='p-4 hover:bg-gray-200'>
-                                <NavLink to=''>
+                                <NavLink to='/editar_evento/formulario_del_pedido'>
                                     Formulario de pedido
                                 </NavLink>
                             </div>
                             <div className='p-4 hover:bg-gray-200'>
-                                <NavLink to=''>
+                                <NavLink to='/editar_evento/confirmacion_del_pedido'>
                                     Confirmacion del pedido
                                 </NavLink>
                             </div>
                             <div className='p-4 hover:bg-gray-200'>
-                                <NavLink to=''>
+                                <NavLink to='/editar_evento/lista_de_espera'>
                                     Lista de espera
                                 </NavLink>
                             </div>

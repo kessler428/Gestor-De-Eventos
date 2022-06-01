@@ -20,3 +20,9 @@ export interface CategoriasDeEventos {
     id: number;
     categoria: string;
 }
+
+export interface FormTableData {
+    detail: string;
+    add: boolean;
+    Obligatorio: boolean;
+}

@@ -2,6 +2,10 @@ export { CrearEvento } from "./CrearEvento";
 export { Events } from "./Events";
 export { VerEvento } from "./VerEvento"
 export { BasicInformation } from './EditEvents/BasicInformation'
+export { ConfirmationForm } from './EditEvents/ConfirmationForm'
+export { Dashboard } from './EditEvents/Dashboard'
 export { Details } from './EditEvents/Details'
 export { Order } from './EditEvents/Order'
+export { OrderForm } from './EditEvents/OrderForm'
 export { Publish } from './EditEvents/Publish'
+export { WaitList } from './EditEvents/WaitList'

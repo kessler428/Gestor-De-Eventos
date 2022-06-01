@@ -2,7 +2,7 @@ import Chart from "react-apexcharts";
 
 export const DonutChart = () => {
   return (
-    <div className='mt-5 '>
+    <div className='mt-5'>
         <Chart
             options={{
                 chart: {

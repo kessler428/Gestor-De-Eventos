@@ -105,5 +105,3 @@ export const Order = () => {
         </>
     )
 }
-
-export default Order;

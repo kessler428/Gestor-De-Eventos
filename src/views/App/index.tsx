@@ -4,12 +4,33 @@ import NotFoundPage from "../NotFoundPage";
 import Login from "../Users/Login";
 import Register from "../Users/Register";
 import { HomeAdmin } from "../Admin/homeAdmin";
-import { Events, CrearEvento, VerEvento, BasicInformation, Details, Order, Publish } from "../Admin/Eventos";
+import { 
+  Events,
+  CrearEvento, 
+  VerEvento, 
+  BasicInformation, 
+  Details, 
+  Order, 
+  Publish, 
+  Dashboard, 
+  OrderForm, 
+  ConfirmationForm, 
+  WaitList 
+} from "../Admin/Eventos";
 import { Pedidos } from "../Admin/Pedidos/Pedidos";
-import { Reportes, VerReporte1, VerReporte2 } from "../Admin/Reportes";
+import { 
+  Reportes, 
+  VerReporte1, 
+  VerReporte2 
+} from "../Admin/Reportes";
 import { Finanzas } from "../Admin/Finanzas/Finanzas";
-import { Settings, PerfilEdit, PerfilAdd } from "../Admin/Settings";
-import Dashboard from "../Admin/Eventos/EditEvents/Dashboard";
+import { 
+  Settings, 
+  PerfilEdit, 
+  PerfilAdd 
+} from "../Admin/Settings";
+
+
 
 function App() {
   return (
@@ -52,6 +73,14 @@ function App() {
           element={ <BasicInformation /> }
         />
         <Route 
+          path="/editar_evento/confirmacion_del_pedido" 
+          element={ <ConfirmationForm /> }
+        />
+        <Route 
+          path="/editar_evento/panel_de_control" 
+          element={ <Dashboard /> }
+        />
+        <Route 
           path="/editar_evento/detalles" 
           element={ <Details /> }
         />
@@ -60,12 +89,16 @@ function App() {
           element={ <Order /> }
         />
         <Route 
+          path="/editar_evento/formulario_del_pedido" 
+          element={ <OrderForm /> }
+        />
+        <Route 
           path="/editar_evento/publicaciones" 
           element={ <Publish /> }
         />
         <Route 
-          path="/editar_evento/panel_de_control" 
-          element={ <Dashboard /> }
+          path="/editar_evento/lista_de_espera" 
+          element={ <WaitList /> }
         />
         <Route 
           path="/pedidos" 
